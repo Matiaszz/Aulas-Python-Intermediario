@@ -1,4 +1,4 @@
-# LISTA DE TAREFAS V1
+# LISTA DE TAREFAS 1.0.2
 import os
 from time import sleep
 tasks = []
@@ -15,7 +15,7 @@ def null():  # Essa função executa quando a lista "tasks" estiver vazia.
 
 
 def add_item():
-    null()
+
     add = input('O que quer adicionar a lista de tarefas?: ').lower()
     if add not in tasks:
         tasks.append(add)
