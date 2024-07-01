@@ -1,7 +1,17 @@
+import os
+
 caminho_arq = 'C:\\Users\\User\\Desktop\\AulasPython\\'
 caminho_arq += 'aulas.txt'  # Cria um arquivo ou edita ele se já tiver
 
-# abre e fecha automaticamente um arquivo depois do codigo ser executado
+##################################
+with open(caminho_arq, 'w', encoding='utf-8') as arquivo:
+    arquivo.write('Atenção\n')
+    arquivo.write('Linha \n')
+
+
+#################################
+
+ # abre e fecha automaticamente um arquivo depois do codigo ser executado
 with open(caminho_arq, 'w+') as arquivo:
     arquivo.write('Ler\n')
     # escreve uma linha no arquivo
@@ -30,4 +40,4 @@ with open(caminho_arq, 'w+') as arquivo:
     print('READLINES')
     arquivo.seek(0, 0)
     for linha in arquivo.readlines():
-        print(linha, end='')
+        print(linha.strip())
