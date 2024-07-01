@@ -1,10 +1,11 @@
+# LISTA DE TAREFAS V1
 import os
 from time import sleep
 tasks = []
 checked = []
 
 
-def null():
+def null():  # Essa função executa quando a lista "tasks" estiver vazia.
     if not tasks:
         first = input(
             'Sua lista de tarefas está vazia, adicione algo: ').lower()
