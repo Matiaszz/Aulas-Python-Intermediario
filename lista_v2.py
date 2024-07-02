@@ -1,4 +1,4 @@
-import os
+import sys
 import json
 
 
@@ -7,7 +7,7 @@ FILE_SAVE = 'lista_v2.json'
 
 def exit_func():
     print('-- Lista de Tarefas Salva - Programa Encerrado --')
-    os.system('exit')
+    sys.exit()
 
 
 def items_list(tarefas):
