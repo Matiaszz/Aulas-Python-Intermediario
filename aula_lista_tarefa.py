@@ -21,9 +21,9 @@ def undo():
 def remake():
     if pops == []:
         print('Nada a refazer.')
-    else:
-        last_index = pops.pop()
-        tasks.append(last_index)
+        return
+    last_index = pops.pop()
+    tasks.append(last_index)
 
 
 while True:
@@ -54,12 +54,13 @@ while True:
 
         for item_task in tasks:
             print(item_task)
+
         print('-' * 30)
         print()
 
     elif value == 'sair':
         print('-- Lista de Tarefas Salva - Programa Encerrado --')
-        with open('C:\\Users\\user\\desktop\\AulasPython\\lista_de_tarefas.txt', 'a', encoding='utf-8') as file:
+        with open(FILE_SAVE, 'a', encoding='utf-8') as file:
             file.write(
                 '\n'.join(['🔹' + task + '\n' for task in tasks]) + '----------SAVE----------' + '\n')
         break
