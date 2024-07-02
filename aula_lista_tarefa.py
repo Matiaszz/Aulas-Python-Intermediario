@@ -30,7 +30,7 @@ while True:
     print('Comandos')
     print('LISTAR', 'DESFAZER', 'REFAZER', 'SAIR')
     value = input(
-        'Digite um comando ou uma tarefa para adicionar: ').lower()
+        'Digite um comando ou uma tarefa para adicionar (NÃO ADICIONE ESPAÇOS SE FOR USAR UM COMANDO!): ').lower()
 
     if value not in commands:
         os.system('cls')
