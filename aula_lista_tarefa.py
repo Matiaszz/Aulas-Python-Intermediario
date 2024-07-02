@@ -30,7 +30,7 @@ while True:
     print('Comandos')
     print('LISTAR', 'DESFAZER', 'REFAZER', 'SAIR')
     value = input(
-        'Digite um comando ou uma tarefa para adicionar (NÃO ADICIONE ESPAÇOS SE FOR USAR UM COMANDO!): ').lower()
+        'Digite um comando ou uma tarefa para adicionar: ').lower().strip()
 
     if value not in commands:
         os.system('cls')
@@ -48,8 +48,7 @@ while True:
         os.system('cls')
         print()
         print('-' * 5, 'ITENS NA LISTA', '-' * 5)
-
-        with open('C:\\Users\\user\\desktop\\AulasPython\\lista_de_tarefas.txt', 'w+', encoding='utf-8') as file:
+        with open(FILE_SAVE, 'w+', encoding='utf-8') as file:
             print('Itens que só podem ser alterados manualmente -🔹:')
             print(file.read())
 
@@ -57,6 +56,7 @@ while True:
             print(item_task)
         print('-' * 30)
         print()
+
     elif value == 'sair':
         print('-- Lista de Tarefas Salva - Programa Encerrado --')
         with open('C:\\Users\\user\\desktop\\AulasPython\\lista_de_tarefas.txt', 'a', encoding='utf-8') as file:
