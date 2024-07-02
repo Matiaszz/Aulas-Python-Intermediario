@@ -1,4 +1,4 @@
-# LISTA DE TAREFAS 1.0.2
+# LISTA DE TAREFAS 1.0.3
 import os
 from time import sleep
 tasks = []
@@ -8,7 +8,7 @@ checked = []
 def null():  # Essa função executa quando a lista "tasks" estiver vazia.
     if not tasks:
         first = input(
-            'Sua lista de tarefas está vazia, adicione algo: ').lower()
+            'Sua lista de tarefas está vazia, adicione algo: ').lower().strip()
         tasks.append(first)
         print(f'Lista atual: {tasks}')
         print(f'Itens concluídos: {checked}')
@@ -16,13 +16,13 @@ def null():  # Essa função executa quando a lista "tasks" estiver vazia.
 
 def add_item():
 
-    add = input('O que quer adicionar a lista de tarefas?: ').lower()
+    add = input('O que quer adicionar a lista de tarefas?: ').lower().strip()
     if add not in tasks:
         tasks.append(add)
 
 
 def rem_item():
-    remove = input('Qual item da lista quer excluir?: ').lower()
+    remove = input('Qual item da lista quer excluir?: ').lower().strip()
     if remove in tasks:
         index = tasks.index(remove)
         tasks.pop(index)
@@ -59,8 +59,8 @@ while True:
     null()
     print('Opções:')
     print('[ADD] | [REM] | [EDIT] | [CHECK] | [EXIT]')
+    chose = input('Digite sua opção: ').lower().replace(' ', '')
 
-    chose = input('Digite sua opção: ').lower().strip()
     if chose not in ['add', 'rem', 'edit', 'check', 'exit']:
         print('Não conheço esta operação.')
         sleep(2)
