@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Allan",
+    "surname": "Matias",
+    "age": 18,
+    "ranks": [
+      "A",
+      "A+"
+    ],
+    "active": false,
+    "telephones": {
+      "residential": "11 00000-0000",
+      "smartphone": "12 00000-0000"
+    }
+  },
+  {
+    "name": "Matheus",
+    "surname": "Jos\u00e9",
+    "age": 42,
+    "ranks": [
+      "A",
+      "A+"
+    ],
+    "active": true,
+    "telephones": {
+      "residential": "13 00000-0000",
+      "smartphone": "14 00000-0000"
+    }
+  }
+]
