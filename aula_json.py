@@ -32,12 +32,12 @@ peoples = [
     }
 ]
 
-with open(JSON_FILE, 'w') as file:
+with open(JSON_FILE, 'w', encoding='utf8') as file:
     json.dump(peoples, file, indent=2)
 # -------------------------------------------#
 # CARREGAR ARQUIVOS DE DENTRO DO ARQUIVO JSON
 
-with open(JSON_FILE, 'r') as file:
+with open(JSON_FILE, 'r', encoding='utf8') as file:
     peoples = json.load(file)
     print(json.dumps(peoples))
 # converto um arquivo JSON para STR, primeiro eu carreguei o arquivo por meio de uma variavel, depois eu imprimi na tela essa string que esta abaixo com json.dumps(peoples)
