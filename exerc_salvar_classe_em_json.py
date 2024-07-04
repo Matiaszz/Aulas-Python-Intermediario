@@ -24,17 +24,12 @@ data_base = [data1.__dict__, data2.__dict__, data3.__dict__]
 # importa para o json o objeto convertido em dicionario
 
 
-def save_json(item, adress):
-    with open(adress, 'w') as file:
-        json.dump(item, file, ensure_ascii=False, indent=2)
+def save_json():
+    with open(DIR_JSON, 'w') as file:
+        json.dump(data_base, file, ensure_ascii=False, indent=2)
         print('Arquivo salvo')
     return
 
 
-def load_json(adress):
-    with open(adress, 'r') as file:
-        item = json.load(file)
-    return item
-
-
-load = save_json(data_base, DIR_JSON)
+if __name__ == '__main__':
+    save_json()

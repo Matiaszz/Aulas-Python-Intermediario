@@ -10,4 +10,4 @@ with open(DIR_JSON, 'r') as file:
     print(p1.nome)
     print(p2.nome)
     print(p3.nome)
-# Abriu o arquivo de save, carregou os arquivos, para cada pessoa, desempacotou os dados que foram salvos (os indices foram pêgos do arq json)
+# Abriu o arquivo de save, carregou os arquivos, para cada pessoa, desempacotou os dados que foram salvos (os indices foram pêgos do arquivo json)
