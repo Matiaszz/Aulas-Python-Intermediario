@@ -1,8 +1,10 @@
 from abc import ABC, abstractmethod
 
 
-class Log(ABC):  # <-- tem que herdar de abc para criar um método abstrato(abstract class method)
-    @abstractmethod  # <-- gera um 'contrato' para dizer 'Você tem que instanciar esse método'
+class Log(ABC):  # <-- tem que herdar de abc para criar um método abstrato
+    # (abstract class method)
+    @abstractmethod  # <-- gera um 'contrato' para dizer 'Você tem que
+    # instanciar esse método'
     def _log(self, msg): ...
 
     def logError(self, msg):
