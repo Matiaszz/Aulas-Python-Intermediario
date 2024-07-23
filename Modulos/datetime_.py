@@ -29,3 +29,7 @@ from datetime import datetime
 
 data = datetime.now()
 print(data.timestamp())  # Mostra o numero de segundos desde 1/1/1970 até agora
+
+
+# mostra o dia e horario desse numero gerado pelo timestamp:
+print(data.fromtimestamp(1721753608))
