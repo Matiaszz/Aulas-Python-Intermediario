@@ -3,4 +3,3 @@ env
 venv
 .env
 __pycache__
-os.py
