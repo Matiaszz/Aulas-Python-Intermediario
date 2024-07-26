@@ -1,7 +1,6 @@
 import os
 import shutil
 
-a = shutil
 HOME = os.path.expanduser('~')
 IMAGES = os.path.join(HOME, 'Pictures', 'Screenshots')
 ORIGINAL_FOLDER = os.path.join(IMAGES, 'EXEMPLO')
