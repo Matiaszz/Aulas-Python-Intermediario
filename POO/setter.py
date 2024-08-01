@@ -3,7 +3,7 @@ class Caneta:
         self._cor = cor
         self._cor_tampa = None
 
-        # 'diz' para os devs que forem mexer no meu codigo, para não usar esse atributo
+# 'diz' para os devs que forem mexer no meu codigo, para não usar esse atributo
 
     @property
     def cor(self):
