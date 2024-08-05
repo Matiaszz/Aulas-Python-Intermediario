@@ -2,6 +2,7 @@ env
 venv
 .venv
 .env
+.git
 
 # Logs
 logs
