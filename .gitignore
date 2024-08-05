@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 env
 venv
 .venv
@@ -120,3 +121,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+.venv
+env
+venv
+.env
+__pycache__
+>>>>>>> c53bc844f203e70eb7c06c81409c405d1a0cd83e
